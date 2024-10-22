@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className='flex flex-col items-center bg-[#e28570] p-4'>
+    <header className='fixed top-0 left-0 w-full z-50 flex flex-col items-center bg-[#e28570] p-4'>
       <img src="" alt="Logo" className="mb-4" />
       <nav>
         <ul className='flex gap-6'>
@@ -12,7 +12,7 @@ const Header = () => {
           <li><a href="#contact" className="text-lg text-white hover:font-bold">Contact</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }
 

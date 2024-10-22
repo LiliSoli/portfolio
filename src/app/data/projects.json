@@ -4,18 +4,11 @@
         "thumb": "../assets/images/thumbs/oh-my-food.webp",
         "screenshot": "",
         "altScreenshot": "",
+        "description": "",
         "linkWebsite": "",
         "linkGithub": "",
-        "description": "",
-        "skills": 
-        [
-            {
-                "name": "HTML",
-                "img": ""
-            }
-        ]
+        "skills": [1, 2, 3]
     },
-
     {
         "title": "Sophie Bluel",
         "thumb": "../assets/images/thumbs/sophie-bluel.webp",
@@ -24,15 +17,8 @@
         "linkWebsite": "",
         "linkGithub": "",
         "description": "",
-        "skills": 
-        [
-            {
-                "name": "HTML",
-                "img": ""
-            }
-        ]
+        "skills": [1]
     },
-
     {
         "title": "Kasa",
         "thumb": "../assets/images/thumbs/kasa.webp",
@@ -41,15 +27,8 @@
         "linkWebsite": "",
         "linkGithub": "",
         "description": "",
-        "skills": 
-        [
-            {
-                "name": "HTML",
-                "img": ""
-            }
-        ]
+        "skills": [1, 4, 5]
     },
-
     {
         "title": "Nina Carducci",
         "thumb": "../assets/images/thumbs/nina-carducci.webp",
@@ -58,15 +37,8 @@
         "linkWebsite": "",
         "linkGithub": "",
         "description": "",
-        "skills": 
-        [
-            {
-                "name": "HTML",
-                "img": ""
-            }
-        ]
+        "skills": [1]
     },
-
     {
         "title": "724 events",
         "thumb": "../assets/images/thumbs/724-events.webp",
@@ -75,15 +47,8 @@
         "linkWebsite": "",
         "linkGithub": "",
         "description": "",
-        "skills": 
-        [
-            {
-                "name": "HTML",
-                "img": ""
-            }
-        ]
+        "skills": [1] 
     },
-
     {
         "title": "Argent Bank",
         "thumb": "../assets/images/thumbs/argent-bank.webp",
@@ -92,12 +57,6 @@
         "linkWebsite": "",
         "linkGithub": "",
         "description": "",
-        "skills": 
-        [
-            {
-                "name": "HTML",
-                "img": ""
-            }
-        ]
+        "skills": [1, 6]
     }
 ]

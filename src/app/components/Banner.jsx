@@ -13,7 +13,7 @@ const Banner = () => {
   };
 
   return (
-    <section className=''>
+    <section className="flex flex-col min-h-screen pt-32">
       <img src="" alt="image banner" className="mb-4" />
       <p>Welcome!</p>
       <FontAwesomeIcon 

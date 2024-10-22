@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "name": "HTML",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+    },
+    {
+        "id": 2,
+        "name": "CSS",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+    },
+    {
+        "id": 3,
+        "name": "SASS",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+    },
+    {
+        "id": 4,
+        "name": "JS",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+    },
+    {
+        "id": 5,
+        "name": "React",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+    },
+    {
+        "id": 6,
+        "name": "REDUX",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+    },
+    {
+        "id": 7,
+        "name": "viteJS",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+    },
+    {
+        "id": 8,
+        "name": "nextJS",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg"
+    },    
+    {
+        "id": 9,
+        "name": "tailwindCSS",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+    },
+    {
+        "id": 10,
+        "name": "Figma",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+    },
+    {
+        "id": 11,
+        "name": "Notion",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg"
+    },    
+    {
+        "id": 12,
+        "name": "GitHub",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+    },
+    {
+        "id": 13,
+        "name": "Agile",
+        "img": ""
+    },
+    {
+        "id": 14,
+        "name": "ESLint",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg"
+    },
+    {
+        "id": 15,
+        "name": "SEO",
+        "img": ""
+    },
+    {
+        "id": 16,
+        "name": "API",
+        "img": ""
+    },
+    {
+        "id": 17,
+        "name": "Scrum",
+        "img": ""
+    }
+]
