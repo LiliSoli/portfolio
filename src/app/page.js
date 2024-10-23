@@ -12,9 +12,9 @@ export default function Home() {
     <>
       <Header />
         <Banner />
-        <section id="portfolio" className="pt-32">
-          <h2>Portfolio</h2>
-          <div className="">
+        <section id="portfolio" className="mt-16 p-16 bg-[#e28570]">
+          <h2 className="text-center text-3xl font-bold mb-16">Portfolio</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mx-4 md:mx-16 lg:mx-52">
             {cardsList
               .map((card) => (
               <Card
@@ -24,12 +24,12 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <section>
-          <h2>Skills</h2>
+        <section className="mt-16">
+          <h2 className="text-center text-3xl font-bold mb-16">Compétences</h2>
           <SkillCard />
         </section>
-        <section>
-          <h3>Restons en contact!</h3>
+        <section className="mt-16">
+          <h3 className="text-center text-3xl font-bold mb-16">Restons en contact!</h3>
           <Form/>
         </section>
       <Footer />

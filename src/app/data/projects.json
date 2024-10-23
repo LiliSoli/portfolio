@@ -4,59 +4,59 @@
         "thumb": "../assets/images/thumbs/oh-my-food.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "description": "",
-        "linkWebsite": "",
         "linkGithub": "",
-        "skills": [1, 2, 3]
+        "skills": [1, 2, 3],
+        "description": "",
+        "linkWebsite": ""
     },
     {
         "title": "Sophie Bluel",
         "thumb": "../assets/images/thumbs/sophie-bluel.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "linkWebsite": "",
-        "linkGithub": "",
         "description": "",
-        "skills": [1]
+        "skills": [1],
+        "linkWebsite": "",
+        "linkGithub": ""
     },
     {
         "title": "Kasa",
         "thumb": "../assets/images/thumbs/kasa.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "linkWebsite": "",
-        "linkGithub": "",
         "description": "",
-        "skills": [1, 4, 5]
+        "skills": [1, 4, 5],
+        "linkWebsite": "",
+        "linkGithub": ""
     },
     {
         "title": "Nina Carducci",
         "thumb": "../assets/images/thumbs/nina-carducci.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "linkWebsite": "",
-        "linkGithub": "",
         "description": "",
-        "skills": [1]
+        "skills": [1],
+        "linkWebsite": "",
+        "linkGithub": ""
     },
     {
         "title": "724 events",
         "thumb": "../assets/images/thumbs/724-events.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "linkWebsite": "",
-        "linkGithub": "",
         "description": "",
-        "skills": [1] 
+        "skills": [1],
+        "linkWebsite": "",
+        "linkGithub": ""
     },
     {
         "title": "Argent Bank",
         "thumb": "../assets/images/thumbs/argent-bank.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "linkWebsite": "",
-        "linkGithub": "",
         "description": "",
-        "skills": [1, 6]
+        "skills": [1, 6],
+        "linkWebsite": "",
+        "linkGithub": ""
     }
 ]
