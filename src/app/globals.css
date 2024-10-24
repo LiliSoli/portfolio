@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: rgb(250, 236, 244);
-    --foreground: #000000;
+    --background: rgb(26, 23, 23);
+    --foreground: #ffffff;
   }
 }
 
@@ -24,12 +24,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-.perspective {
-  perspective: 1000px;
-}
-
-.backface-hidden {
-  backface-visibility: hidden;
 }

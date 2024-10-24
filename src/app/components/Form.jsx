@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useForm } from "react-hook-form";
 import PropTypes from "prop-types";
@@ -16,57 +16,66 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
     const { nom, prenom, email, message } = data;
 
     try {
-      const serviceID = "service_9cmcrrl";
-      const templateID = "template_rgcl309";
-      const userID = "A7d7vUdGsnDTrsmrN";
+      const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const userID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 
       const templateParams = {
-        from_name: nom,
-        to_name: prenom,
+        from_name: prenom + " " + nom,
+        to_name: "",
         email: email,
         message: message
       };
-      
 
-      console.log("Tentative d'envoi de l'email", templateParams); 
+      console.log("Tentative d'envoi de l'email", templateParams);
       await emailjs.send(serviceID, templateID, templateParams, userID);
-      console.log("après l'envoi "); 
+      console.log("après l'envoi");
       onSuccess();
-      reset(); // Réinitialiser le formulaire après l'envoi
+      reset();
     } catch (err) {
       onError("Erreur lors de l'envoi du message.");
     }
   };
 
   return (
-    <form onSubmit={handleSubmit(sendContact)}>
-      <div className="row">
-        <div className="col">
-          {/* Champ Nom */}
-          <label htmlFor="nom">Nom</label>
+    <div className="max-w-2xl mx-auto bg-gray-100 rounded-lg shadow-md">
+      <div className="relative max-h-300 mb-4 shadow-lg">
+        <img
+          src="/assets/images/laptop.webp"
+          alt="Vue d'un ordinateur"
+          className="rounded-t-lg" 
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-600 bg-opacity-50 rounded-t-lg">
+          <h2 className="text-white text-center text-3xl font-bold p-4">Restons en contact!</h2>
+          <p className="text-white text-center pb-4 mx-5">J'ai hâte de discuter avec vous et de voir comment je peux contribuer à votre projet.</p>
+        </div>
+      </div>
+
+      <form onSubmit={handleSubmit(sendContact)} className="space-y-4 px-14 py-6">
+        <div>
           <input
             id="nom"
             name="nom"
             type="text"
             {...register("nom", { required: "Le nom est requis." })}
             placeholder="Nom"
-            className="input-field"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
-          {errors.nom && <p>{errors.nom.message}</p>}
+          {errors.nom && <p className="text-red-500 text-sm">{errors.nom.message}</p>}
+        </div>
 
-          {/* Champ Prénom */}
-          <label htmlFor="prenom">Prénom</label>
+        <div>
           <input
             id="prenom"
             name="prenom"
             type="text"
             {...register("prenom")}
             placeholder="Prénom"
-            className="input-field"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
+        </div>
 
-          {/* Champ Email */}
-          <label htmlFor="email">Email</label>
+        <div>
           <input
             id="email"
             name="email"
@@ -79,28 +88,31 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
               }
             })}
             placeholder="Email"
-            className="input-field"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
-          {errors.email && <p>{errors.email.message}</p>}
+          {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+        </div>
 
-          {/* Champ Message */}
-          <label htmlFor="message">Message</label>
+        <div>
           <textarea
             id="message"
             name="message"
             {...register("message", { required: "Le message est requis." })}
             placeholder="Message"
-            className="input-field"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
-          {errors.message && <p>{errors.message.message}</p>}
-
-          {/* Bouton d'envoi */}
-          <button type="submit" disabled={isSubmitting} className="submit-button">
-            {isSubmitting ? "En cours..." : "Envoyer"}
-          </button>
+          {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
         </div>
-      </div>
-    </form>
+
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="w-full py-2 mt-4 bg-gray-300 text-gray-700 font-semibold rounded-md hover:bg-[#e28570] hover:text-white transition duration-200 disabled:opacity-50"
+        >
+          {isSubmitting ? "En cours..." : "Envoyer"}
+        </button>
+      </form>
+    </div>
   );
 };
 
@@ -110,3 +122,121 @@ Form.propTypes = {
 };
 
 export default Form;
+
+
+// "use client";
+
+// import { useForm } from "react-hook-form";
+// import PropTypes from "prop-types";
+// import emailjs from "emailjs-com";
+
+// const Form = ({ onSuccess = () => null, onError = () => null }) => {
+//   const {
+//     register,
+//     handleSubmit,
+//     formState: { errors, isSubmitting },
+//     reset
+//   } = useForm();
+
+//   const sendContact = async (data) => {
+//     const { nom, prenom, email, message } = data;
+
+//     try {
+//       const serviceID = "service_9cmcrrl";
+//       const templateID = "template_rgcl309";
+//       const userID = "A7d7vUdGsnDTrsmrN";
+
+//       const templateParams = {
+//         from_name: nom,
+//         to_name: prenom,
+//         email: email,
+//         message: message
+//       };
+
+//       console.log("Tentative d'envoi de l'email", templateParams);
+//       await emailjs.send(serviceID, templateID, templateParams, userID);
+//       console.log("après l'envoi");
+//       onSuccess();
+//       reset();
+//     } catch (err) {
+//       onError("Erreur lors de l'envoi du message.");
+//     }
+//   };
+
+//   return (
+//     <form onSubmit={handleSubmit(sendContact)} className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md">
+//       <div className="space-y-4">
+//         <div>
+//           <label htmlFor="nom" className="block text-gray-700 text-xl font-semibold mb-2">Nom</label>
+//           <input
+//             id="nom"
+//             name="nom"
+//             type="text"
+//             {...register("nom", { required: "Le nom est requis." })}
+//             placeholder="Nom"
+//             className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+//           />
+//           {errors.nom && <p className="text-red-500 text-sm">{errors.nom.message}</p>}
+//         </div>
+
+//         <div>
+//           <label htmlFor="prenom" className="block text-gray-700 text-xl font-semibold mb-2">Prénom</label>
+//           <input
+//             id="prenom"
+//             name="prenom"
+//             type="text"
+//             {...register("prenom")}
+//             placeholder="Prénom"
+//             className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+//           />
+//         </div>
+
+//         <div>
+//           <label htmlFor="email" className="block text-gray-700 text-xl font-semibold mb-2">Email</label>
+//           <input
+//             id="email"
+//             name="email"
+//             type="email"
+//             {...register("email", {
+//               required: "L'adresse email est requise.",
+//               pattern: {
+//                 value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+//                 message: "Adresse email invalide."
+//               }
+//             })}
+//             placeholder="Email"
+//             className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+//           />
+//           {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+//         </div>
+
+//         <div>
+//           <label htmlFor="message" className="block text-gray-700 text-xl font-semibold mb-2">Message</label>
+//           <textarea
+//             id="message"
+//             name="message"
+//             {...register("message", { required: "Le message est requis." })}
+//             placeholder="Message"
+//             className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+//           />
+//           {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
+//         </div>
+
+//         <button
+//           type="submit"
+//           disabled={isSubmitting}
+//           className="w-full py-2 mt-4 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-200 disabled:opacity-50"
+//         >
+//           {isSubmitting ? "En cours..." : "Envoyer"}
+//         </button>
+//       </div>
+//     </form>
+//   );
+// };
+
+// Form.propTypes = {
+//   onError: PropTypes.func,
+//   onSuccess: PropTypes.func
+// };
+
+// export default Form;

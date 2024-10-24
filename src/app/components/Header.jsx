@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className='top-0 left-0 w-full z-50 flex flex-col items-center bg-[#e28570] p-4'>
+    <header className='absolute top-0 left-0 w-full z-50 flex flex-col items-center bg-gradient-to-r from-green-400 to-teal-400 p-4'>
       <img src="" alt="Logo" className="mb-4" />
       <nav>
         <ul className='flex gap-6'>

@@ -77,41 +77,6 @@ function Card({ card }) {
                     className="absolute top-4 right-4 text-2xl cursor-pointer text-gray-600 hover:text-gray-950"
                 />
             </Modal>
-
-
-            {/* <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                contentLabel={card.title}
-                className=""
-                overlayClassName=""
-                ariaHideApp={false}
-            >
-                <h4 className="text-2xl font-bold p-4">{card.title}</h4>
-                <img
-                    src={card.thumb}
-                    alt={card.title}
-                    className=""
-                />
-                <p>{card.description}</p>
-
-                <h3>Skills</h3>
-                {skillsData
-                    .filter(skill => card.skills.includes(skill.id))
-                    .map(skill => (
-                        <div key={skill.id} className="">
-                            <img
-                                src={skill.img}
-                                alt={skill.name}
-                                className=""
-                            />
-                        </div>
-                    ))}
-
-                <button onClick={closeModal} className="">
-                    Fermer
-                </button>
-            </Modal> */}
         </div>
     );
 }

@@ -2,86 +2,103 @@
     {
         "id": 1,
         "name": "HTML",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+        "category": "Langages et frameworks"
     },
     {
         "id": 2,
         "name": "CSS",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+        "category": "Langages et frameworks"
     },
     {
         "id": 3,
         "name": "SASS",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+        "category": "Langages et frameworks"
     },
     {
         "id": 4,
         "name": "JS",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+        "category": "Langages et frameworks"
     },
     {
         "id": 5,
         "name": "React",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "category": "Langages et frameworks"
     },
     {
         "id": 6,
         "name": "REDUX",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+        "category": "Langages et frameworks"
     },
     {
         "id": 7,
         "name": "viteJS",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+        "category": "Outils de développement"
     },
     {
         "id": 8,
         "name": "nextJS",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg"
-    },    
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg",
+        "category": "Outils de développement"
+    },
     {
         "id": 9,
-        "name": "tailwindCSS",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+        "name": "tailwind",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+        "category": "Outils de développement"
     },
     {
         "id": 10,
         "name": "Figma",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+        "category": "Méthodologies et collaboration"
     },
     {
         "id": 11,
         "name": "Notion",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg"
-    },    
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg",
+        "category": "Méthodologies et collaboration"
+    },
     {
         "id": 12,
         "name": "GitHub",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+        "category": "Outils de développement"
     },
     {
         "id": 13,
         "name": "Agile",
-        "img": ""
+        "img": "",
+        "category": "Méthodologies et collaboration"
     },
     {
         "id": 14,
         "name": "ESLint",
-        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg"
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg",
+        "category": "Outils de développement"
     },
     {
         "id": 15,
         "name": "SEO",
-        "img": ""
+        "img": "",
+        "category": "Méthodologies et collaboration"
     },
     {
         "id": 16,
         "name": "API",
-        "img": ""
+        "img": "",
+        "category": "Outils de développement"
     },
     {
         "id": 17,
         "name": "Scrum",
-        "img": ""
+        "img": "",
+        "category": "Méthodologies et collaboration"
     }
 ]
