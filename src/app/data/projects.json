@@ -1,62 +1,62 @@
 [
     {
         "title": "Oh my food",
-        "thumb": "../assets/images/thumbs/oh-my-food.webp",
+        "thumb": "assets/images/thumbs/oh-my-food.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "linkGithub": "",
-        "skills": [1, 2, 3],
-        "description": "",
-        "linkWebsite": ""
+        "skills": [1, 2, 3, 10],
+        "description": "Création d'un site en mobile first, à partir de maquettes fournies. Des animations en CSS ont été ajoutées afin d'améliorer l'expérience utilisateur.",
+        "linkWebsite": "https://lilisoli.github.io/OhMyFood-/index.html",
+        "linkGithub": "https://github.com/LiliSoli/OhMyFood-"
     },
     {
         "title": "Sophie Bluel",
-        "thumb": "../assets/images/thumbs/sophie-bluel.webp",
+        "thumb": "assets/images/thumbs/sophie-bluel.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "description": "",
-        "skills": [1],
+        "description": "Création d'un site web interactif pour une architecte d'intérieur, mettant en avant ses travaux via une galerie dynamique, une page de connexion pour la gestion de contenu, et une interface d'ajout de projets",
+        "skills": [1, 2, 4, 16, 10],
         "linkWebsite": "",
-        "linkGithub": ""
+        "linkGithub": "https://github.com/LiliSoli/SophieBluel"
     },
     {
         "title": "Kasa",
-        "thumb": "../assets/images/thumbs/kasa.webp",
+        "thumb": "assets/images/thumbs/kasa.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "description": "",
-        "skills": [1, 4, 5],
+        "description": "Création d'une application web de location immobilière développée avec React, à partir de maquettes fournies",
+        "skills": [5, 3, 10],
         "linkWebsite": "",
-        "linkGithub": ""
+        "linkGithub": "https://github.com/LiliSoli/Kasa.git"
     },
     {
         "title": "Nina Carducci",
-        "thumb": "../assets/images/thumbs/nina-carducci.webp",
+        "thumb": "assets/images/thumbs/nina-carducci.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "description": "",
-        "skills": [1],
+        "description": "Optimisation du référencement d'un site web pour une photographe avec Lighthouse, Wave et Schema.org, afin d'identifier les points d'amélioration en performance et SEO",
+        "skills": [14],
         "linkWebsite": "",
-        "linkGithub": ""
+        "linkGithub": "https://github.com/LiliSoli/NinaCarducci"
     },
     {
         "title": "724 events",
-        "thumb": "../assets/images/thumbs/724-events.webp",
+        "thumb": "assets/images/thumbs/724-events.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "description": "",
-        "skills": [1],
+        "description": "Debug et finalisation d'un site vitrine d'une agence événementielle, avec analyse et correction des erreurs dans le code existant et utilisation des tests unitaires",
+        "skills": [5],
         "linkWebsite": "",
-        "linkGithub": ""
+        "linkGithub": "https://github.com/LiliSoli/724events"
     },
     {
         "title": "Argent Bank",
-        "thumb": "../assets/images/thumbs/argent-bank.webp",
+        "thumb": "assets/images/thumbs/argent-bank.webp",
         "screenshot": "",
         "altScreenshot": "",
-        "description": "",
-        "skills": [1, 6],
+        "description": "Migration d'un site HTML/CSS vers une application front-end dynamique pour une banque en ligne, en utilisant React et Redux",
+        "skills": [5, 6, 15],
         "linkWebsite": "",
-        "linkGithub": ""
+        "linkGithub": "https://github.com/LiliSoli/ArgentBank-website"
     }
 ]

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,11 +19,21 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+div.carousel .control-dots .dot {
+  background-color: #4b5563;
+  transition: background-color 0.3s ease;
+}
+
+div.carousel .control-dots .dot:hover,
+div.carousel .control-dots .dot.selected {
+  background-color: #030712;
 }

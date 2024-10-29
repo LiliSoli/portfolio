@@ -3,6 +3,7 @@
 import { useForm } from "react-hook-form";
 import PropTypes from "prop-types";
 import emailjs from "emailjs-com";
+import Image from "next/image";
 
 const Form = ({ onSuccess = () => null, onError = () => null }) => {
   const {
@@ -40,14 +41,17 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
   return (
     <div className="max-w-2xl mx-auto bg-gray-100 rounded-lg shadow-md">
       <div className="relative max-h-300 mb-4 shadow-lg">
-        <img
-          src="/assets/images/laptop.webp"
+        <Image
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}assets/images/laptop.webp`}
           alt="Vue d'un ordinateur"
-          className="rounded-t-lg" 
+          className="rounded-t-lg"
+          width={200}
+          height={200}
+          layout="responsive"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-600 bg-opacity-50 rounded-t-lg">
           <h2 className="text-white text-center text-3xl font-bold p-4">Restons en contact!</h2>
-          <p className="text-white text-center pb-4 mx-5">J'ai hâte de discuter avec vous et de voir comment je peux contribuer à votre projet.</p>
+          <p className="text-white text-center pb-4 mx-5">J`&apos;`ai hâte de discuter avec vous et de voir comment je peux contribuer à votre projet.</p>
         </div>
       </div>
 
@@ -59,7 +63,7 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
             type="text"
             {...register("nom", { required: "Le nom est requis." })}
             placeholder="Nom"
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-teal-400"
           />
           {errors.nom && <p className="text-red-500 text-sm">{errors.nom.message}</p>}
         </div>
@@ -71,7 +75,7 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
             type="text"
             {...register("prenom")}
             placeholder="Prénom"
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-teal-400"
           />
         </div>
 
@@ -88,7 +92,7 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
               }
             })}
             placeholder="Email"
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-teal-400"
           />
           {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
         </div>
@@ -99,7 +103,7 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
             name="message"
             {...register("message", { required: "Le message est requis." })}
             placeholder="Message"
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-teal-400"
           />
           {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
         </div>
@@ -107,7 +111,7 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full py-2 mt-4 bg-gray-300 text-gray-700 font-semibold rounded-md hover:bg-[#e28570] hover:text-white transition duration-200 disabled:opacity-50"
+          className="w-full py-2 mt-4 bg-gray-300 text-gray-700 font-semibold rounded-md hover:bg-gradient-to-r from-green-400 to-teal-400 hover:text-white transition duration-200 disabled:opacity-50"
         >
           {isSubmitting ? "En cours..." : "Envoyer"}
         </button>
