@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="absolute top-0 left-0 w-full z-50 flex justify-around items-center py-10">
+    <header className="absolute top-0 left-0 w-full z-10 flex justify-around items-center py-6">
       <h1 className="font-semibold italic text-6xl">a.</h1>
       <nav>
         <ul className='flex gap-6'>

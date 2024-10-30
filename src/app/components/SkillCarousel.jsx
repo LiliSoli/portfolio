@@ -36,7 +36,7 @@ const SkillCarousel = () => {
         renderArrowNext={(clickHandler) => (
           <button 
             onClick={clickHandler} 
-            className="absolute right-0 inset-y-0 z-10 p-4 transition-all duration-300 transform text-gray-600 hover:text-gray- "
+            className="absolute right-0 inset-y-0 z-10 p-4 transition-all duration-300 transform text-gray-600 hover:text-gray-950"
             style={{ fontSize: '3rem' }}
           >
             <FaChevronRight />

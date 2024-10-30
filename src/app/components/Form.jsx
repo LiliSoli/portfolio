@@ -51,7 +51,7 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-600 bg-opacity-50 rounded-t-lg">
           <h2 className="text-white text-center text-3xl font-bold p-4">Restons en contact!</h2>
-          <p className="text-white text-center pb-4 mx-5">J`&apos;`ai hâte de discuter avec vous et de voir comment je peux contribuer à votre projet.</p>
+          <p className="text-white text-center pb-4 mx-5">J'ai hâte de discuter avec vous et de voir comment je peux contribuer à votre projet.</p>
         </div>
       </div>
 

@@ -2,7 +2,12 @@
     {
         "title": "Oh my food",
         "thumb": "assets/images/thumbs/oh-my-food.webp",
-        "screenshot": "",
+        "screenshots": 
+        [
+            "assets/images/screenshots/ohmyfood-screens/ohmyfood1.webp",
+            "assets/images/screenshots/ohmyfood-screens/ohmyfood2.webp",
+            "assets/images/screenshots/ohmyfood-screens/ohmyfood3.webp"
+        ],
         "altScreenshot": "",
         "skills": [1, 2, 3, 10],
         "description": "Création d'un site en mobile first, à partir de maquettes fournies. Des animations en CSS ont été ajoutées afin d'améliorer l'expérience utilisateur.",
@@ -12,7 +17,12 @@
     {
         "title": "Sophie Bluel",
         "thumb": "assets/images/thumbs/sophie-bluel.webp",
-        "screenshot": "",
+        "screenshots": 
+        [
+            "assets/images/screenshots/sophiebluel-screens/sophiebluel1.webp",
+            "assets/images/screenshots/sophiebluel-screens/sophiebluel2.webp",
+            "assets/images/screenshots/sophiebluel-screens/sophiebluel3.webp"
+        ],
         "altScreenshot": "",
         "description": "Création d'un site web interactif pour une architecte d'intérieur, mettant en avant ses travaux via une galerie dynamique, une page de connexion pour la gestion de contenu, et une interface d'ajout de projets",
         "skills": [1, 2, 4, 16, 10],
@@ -22,7 +32,11 @@
     {
         "title": "Kasa",
         "thumb": "assets/images/thumbs/kasa.webp",
-        "screenshot": "",
+        "screenshots": 
+        [
+            "assets/images/screenshots/kasa-screens/kasa1.webp",
+            "assets/images/screenshots/kasa-screens/kasa2.webp"
+        ],
         "altScreenshot": "",
         "description": "Création d'une application web de location immobilière développée avec React, à partir de maquettes fournies",
         "skills": [5, 3, 10],
@@ -32,7 +46,7 @@
     {
         "title": "Nina Carducci",
         "thumb": "assets/images/thumbs/nina-carducci.webp",
-        "screenshot": "",
+        "screenshots": ["assets/images/screenshots/ninacarducci-screens/ninacarducci.webp"],
         "altScreenshot": "",
         "description": "Optimisation du référencement d'un site web pour une photographe avec Lighthouse, Wave et Schema.org, afin d'identifier les points d'amélioration en performance et SEO",
         "skills": [14],
@@ -42,7 +56,12 @@
     {
         "title": "724 events",
         "thumb": "assets/images/thumbs/724-events.webp",
-        "screenshot": "",
+        "screenshots": 
+        [
+            "assets/images/screenshots/724events-screens/724events1.webp",
+            "assets/images/screenshots/724events-screens/724events2.webp",
+            "assets/images/screenshots/724events-screens/724events3.webp"
+        ],
         "altScreenshot": "",
         "description": "Debug et finalisation d'un site vitrine d'une agence événementielle, avec analyse et correction des erreurs dans le code existant et utilisation des tests unitaires",
         "skills": [5],
@@ -52,7 +71,10 @@
     {
         "title": "Argent Bank",
         "thumb": "assets/images/thumbs/argent-bank.webp",
-        "screenshot": "",
+        "screenshots": [
+            "assets/images/screenshots/argentbank-screens/argentbank1.webp",
+            "assets/images/screenshots/argentbank-screens/argentbank2.webp"
+        ],
         "altScreenshot": "",
         "description": "Migration d'un site HTML/CSS vers une application front-end dynamique pour une banque en ligne, en utilisant React et Redux",
         "skills": [5, 6, 15],

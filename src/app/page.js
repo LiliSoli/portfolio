@@ -10,6 +10,7 @@ import Form from "@components/Form";
 import Footer from "@components/Footer";
 import SkillFilter from "@components/SkillFilter";
 import cardsList from "@data/projects.json";
+import Preloader from './components/Preloader';
 
 function Home() {
   const [selectedSkill, setSelectedSkill] = useState("Tous");
@@ -20,6 +21,7 @@ function Home() {
 
   return (
     <>
+      <Preloader />
       <Header />
       <Banner />
 
