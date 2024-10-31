@@ -28,17 +28,6 @@ body {
   }
 }
 
-/* Pour le composant SkillCarousel */
-div.carousel .control-dots .dot {
-  background-color: #4b5563;
-  transition: background-color 0.3s ease;
-}
-
-div.carousel .control-dots .dot:hover,
-div.carousel .control-dots .dot.selected {
-  background-color: #030712;
-}
-
 /* Pour le composant Preloader */
 @keyframes rise {
   0% { transform: translateY(100%); opacity: 0; }
@@ -67,5 +56,20 @@ div.carousel .control-dots .dot.selected {
 
 .animate-fadeOut {
   animation: fadeOut 1.3s ease-in-out 3s forwards; /* Ajoute un délai pour commencer après le dernier caractère */
+}
+
+/* Pour le composant SkillCarousel */
+div.carousel .control-dots .dot {
+  background-color: #4b5563;
+  transition: background-color 0.3s ease;
+}
+
+div.carousel .control-dots .dot:hover,
+div.carousel .control-dots .dot.selected {
+  background-color: #030712;
+}
+
+.max-width {
+  max-width: 320px;
 }
 

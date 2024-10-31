@@ -67,8 +67,8 @@
     },
     {
         "id": 12,
-        "name": "Agile",
-        "img": "",
+        "name": "Scrum",
+        "img": "assets/images/skills/scrum.webp",
         "category": "Méthodologies et collaboration"
     },
     {
@@ -80,19 +80,13 @@
     {
         "id": 14,
         "name": "SEO",
-        "img": "",
+        "img": "assets/images/skills/seo.webp",
         "category": "Méthodologies et collaboration"
     },
     {
         "id": 15,
         "name": "API",
-        "img": "",
+        "img": "assets/images/skills/api.webp",
         "category": "Outils de développement"
-    },
-    {
-        "id": 16,
-        "name": "Scrum",
-        "img": "",
-        "category": "Méthodologies et collaboration"
     }
 ]

@@ -30,7 +30,7 @@ function Home() {
 
         <SkillFilter selectedSkill={selectedSkill} onSkillSelect={setSelectedSkill} />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mx-4 md:mx-16 lg:mx-56">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center mx-4 md:mx-16 lg:mx-56">
           {filteredCards.map((card) => (
             <Card key={card.title} card={card} />
           ))}
@@ -43,7 +43,7 @@ function Home() {
         <SkillCarousel />
       </section>
 
-      <section id="contact" className="bg-gradient-to-r from-green-400 to-teal-400 p-16">
+      <section id="contact" className="bg-gradient-to-r from-green-400 to-teal-400 py-16">
         <Form />
       </section>
 

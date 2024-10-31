@@ -15,7 +15,7 @@ const Preloader = () => {
     }, [chars.length]);
 
     return (
-        <div className="fixed flex justify-center items-center w-screen h-screen z-20 bg-gray-900 transition-transform animate-fadeOut">
+        <div className="fixed flex justify-center items-center w-screen h-screen z-50 bg-gray-900 transition-transform animate-fadeOut">
             <div className="overflow-hidden h-20 w-40 relative bg-gray-900">
                 {chars.map((char, index) => (
                     <span

@@ -170,33 +170,34 @@ function Card({ card }) {
                     alt={card.title}
                     width={96}
                     height={80}
-                    className="w-96 h-80 object-cover filter grayscale transition-all duration-300 ease-in-out transform hover:scale-110 hover:grayscale-0"
+                    className="w-96 h-80 object-cover transition-all duration-300 ease-in-out transform hover:scale-110 hover:grayscale-0 md:grayscale"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/80 to-transparent"></div>
                 <h3 className="absolute inset-x-0 bottom-0 text-white text-2xl font-bold p-4 text-center">
                     {card.title}
                 </h3>
+
             </div>
 
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel={card.title}
-                className="relative bg-white rounded-lg border-none shadow-2xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-screen-2xl my-auto p-6 outline-none"
+                className="relative bg-white rounded-lg border-none shadow-2xl max-h-screen overflow-y-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-screen-2xl my-auto p-6 outline-none z-50"
                 overlayClassName="fixed inset-0 z-20 bg-black bg-opacity-50 flex justify-center items-center overflow-hidden"
                 ariaHideApp={false}
             >
                 <h4 className="text-3xl font-bold mb-4 text-gray-800">{card.title}</h4>
 
-                <div className="flex gap-10 flex-col lg:flex-row">
+                <div className="flex flex-col gap-2 sm:gap-6 lg:gap-10 lg:flex-row">
                     <div className="overflow-hidden">
                         <Image
                             src={`${process.env.NEXT_PUBLIC_BASE_PATH}${card.screenshots[currentImageIndex]}`}
                             alt={card.title}
                             width={20}
                             height={20}
-                            layout="responsive"
-                            className="mb-4 w-fit object-cover max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md xl:max-w-5xl mx-auto rounded-md shadow-md"
+                            className="mb-4 w-fit object-cover max-w-xs sm:max-w-sm md:max-w-sm lg:max-w-md xl:max-w-4xl mx-auto rounded-md shadow-md"
+                            style={{ width: '100%', height: 'auto' }}
                         />
 
                         <div className="flex justify-center mt-4 space-x-2 pb-4 px-4">
@@ -207,7 +208,7 @@ function Card({ card }) {
                                     alt={`Thumbnail ${index + 1}`}
                                     width={80}
                                     height={80}
-                                    className={`w-20 sm:w-22 md:w-32 lg:w-36 xl:w-40 object-cover cursor-pointer rounded-md transition-transform duration-200 ${index === currentImageIndex ? 'border-2 border-green-400 scale-105' : ''}`}
+                                    className={`w-20 sm:w-22 md:w-28 lg:w-36 xl:w-40 object-cover cursor-pointer rounded-md transition-transform duration-200 ${index === currentImageIndex ? 'border-2 border-green-400 scale-105' : ''}`}
                                     onClick={() => handleThumbnailClick(index)}
                                 />
                             ))}
@@ -216,7 +217,7 @@ function Card({ card }) {
 
                     <div className="lg:w-1/3">
                         <h5 className="text-xl font-semibold mb-2 text-gray-700">Description</h5>
-                        <p className="text-gray-600 mb-10 leading-relaxed">{card.description}</p>
+                        <p className="text-gray-600 mb-2 lg:mb-10 leading-relaxed">{card.description}</p>
 
                         <h5 className="text-xl font-semibold mb-2 text-gray-700">Compétences</h5>
                         <div className="flex flex-row flex-wrap mb-4">
@@ -227,15 +228,15 @@ function Card({ card }) {
                                         <Image
                                             src={skill.img}
                                             alt={skill.name}
-                                            className="w-12 h-12"
+                                            className="w-12 h-12 object-contain"
                                             width={12}
                                             height={12}
-                                            />
+                                        />
                                     </div>
                                 ))}
-                                </div>
-                            
-                            <div className="flex flex-col lg:space-y-2 mt-4 lg:mt-0 lg:absolute lg:bottom-6 lg:right-3 lg:mr-3">
+                        </div>
+
+                        <div className="flex flex-col lg:space-y-2 mt-4 lg:mt-0 lg:absolute lg:bottom-6 lg:right-3 lg:mr-3">
                             {card.linkWebsite && (
                                 <a
                                     href={card.linkWebsite}
