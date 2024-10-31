@@ -9,7 +9,7 @@ const Footer = () => {
                 <div>&copy; 2024 || Tous droits réservés.</div>
                 <div className="flex space-x-4 mt-2">
                     <a
-                        href=""
+                        href="https://www.linkedin.com/in/aur%C3%A9lie-solier/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
@@ -20,11 +20,10 @@ const Footer = () => {
                             className="w-6 h-6 transition-transform duration-200 hover:scale-110"
                             width={20}
                             height={20}
-                        // layout="responsive"
                         />
                     </a>
                     <a
-                        href=""
+                        href="https://github.com/LiliSoli"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub"
@@ -35,7 +34,6 @@ const Footer = () => {
                             className="w-6 h-6 transition-transform duration-200 hover:scale-110"
                             width={20}
                             height={20}
-                        // layout="responsive"
                         />
                     </a>
                 </div>

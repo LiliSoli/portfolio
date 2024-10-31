@@ -14,6 +14,7 @@ function SkillFilter({ selectedSkill, onSkillSelect }) {
       >
         Tous
       </button>
+      
       {filteredSkills.map(skill => (
         <button
           key={skill.id}

@@ -1,4 +1,3 @@
-// Home.js
 "use client";
 
 import { useState } from 'react';
@@ -25,12 +24,15 @@ function Home() {
       <Header />
       <Banner />
 
-      <section id="portfolio" className="p-16 bg-gradient-to-r from-green-400 to-teal-400">
-        <h2 className="text-center text-3xl font-bold mb-10">Portfolio</h2>
+      <section id="portfolio" className="p-10 bg-gradient-to-r from-green-400 to-teal-400">
+        <h2 className="text-center text-3xl font-bold mb-10">
+          Portfolio
+        </h2>
 
         <SkillFilter selectedSkill={selectedSkill} onSkillSelect={setSelectedSkill} />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center mx-4 md:mx-16 lg:mx-56">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center mx-1 md:mx-16 lg:mx-40">
           {filteredCards.map((card) => (
             <Card key={card.title} card={card} />
           ))}
