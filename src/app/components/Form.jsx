@@ -48,23 +48,25 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
           src={`${process.env.NEXT_PUBLIC_BASE_PATH}assets/images/laptop.webp`}
           alt="Vue d'un ordinateur"
           className="rounded-t-lg border-2 border-transparent"
+          loading="lazy"
           width={200}
           height={200}
           style={{ width: '100%', height: 'auto' }}
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-600 bg-opacity-50 rounded-t-lg">
           <h2
-            className="text-white text-center text-3xl font-bold p-4">Restons en contact!
+            className="text-white text-center text-xl sm:text-3xl font-bold p-4">Restons en contact!
           </h2>
           <p
             className="text-white text-center pb-4 mx-5">
             J&#39;ai hâte de discuter avec vous et de voir comment je peux contribuer à votre projet.
-            </p>
+          </p>
         </div>
       </div>
 
       <form onSubmit={handleSubmit(sendContact)} className="space-y-4 px-14 py-6">
         <div>
+        <label htmlFor="nom" className="sr-only">Nom</label>
           <input
             id="nom"
             name="nom"
@@ -77,6 +79,7 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
         </div>
 
         <div>
+        <label htmlFor="prenom" className="sr-only">Prénom</label>
           <input
             id="prenom"
             name="prenom"
@@ -88,6 +91,7 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
         </div>
 
         <div>
+        <label htmlFor="email" className="sr-only">Email</label>
           <input
             id="email"
             name="email"
@@ -106,6 +110,7 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
         </div>
 
         <div>
+        <label htmlFor="message" className="sr-only">Message</label>
           <textarea
             id="message"
             name="message"

@@ -55,8 +55,33 @@ body {
 }
 
 .animate-fadeOut {
-  animation: fadeOut 1.3s ease-in-out 3s forwards; /* Ajoute un délai pour commencer après le dernier caractère */
+  animation: fadeOut 1.3s ease-in-out 3s forwards;
 }
+
+/* Pour le composant Header - animation nom et prénom */
+@keyframes slideAndDisappear {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  animation: slideAndDisappear 5s cubic-bezier(1, 0, 0, 1) 0s infinite;
+}
+
 
 /* Pour le composant SkillCarousel */
 div.carousel .control-dots .dot {

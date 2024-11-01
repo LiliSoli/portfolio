@@ -1,32 +1,55 @@
-import React, { useState } from 'react';
+"use client";
+
+import { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import classNames from 'classnames';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showName, setShowName] = useState(false);
+  const [isPreloaderDone, setIsPreloaderDone] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsPreloaderDone(true);
+      setShowName(true); 
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <header
-      className="absolute top-0 left-0 w-full z-10 flex justify-between items-center py-6 px-4">
-      <h1
-        className="font-semibold italic text-6xl pl-10 sm:pl-20">a.
-      </h1>
+    <header className="absolute top-0 left-0 w-full z-10 flex justify-between items-center py-6 px-4">
+      <div className="relative pl-2 sm:pl-20 flex items-center">
+        <h2 className="font-semibold italic text-3xl md:text-6xl">a.</h2>
 
-      <div className="md:hidden">
+      {showName && (
+        <div className="w-[150px] md:w-[200px] overflow-hidden">
+          <span
+            className="inline-block font-semibold italic text-md md:text-2xl px-4 md:pt-4 text-white animate-slide"
+            style={{ whiteSpace: 'nowrap' }}
+          >
+            aurélie solier
+          </span>
+        </div>
+        )}
+      </div>
+
+      <div className="lg:hidden">
         <button
           onClick={toggleMenu}
-          className="text-white focus:outline-none pt-4 pr-10 sm:pr-16">
-          <FaBars className="text-3xl" />
+          className="text-white focus:outline-none pt-2 pr-2 sm:pr-16 md:pt-4 md:pr-10 ">
+          <FaBars className="text-xl md:text-3xl" />
         </button>
       </div>
 
       <nav
         className={classNames(
-          "absolute top-16 right-0 transition-all duration-300 md:static md:flex md:justify-end ",
+          "absolute top-16 right-0 transition-all duration-300 lg:static lg:flex lg:justify-end ",
           {
             "bg-gray-800 max-h-screen w-48 p-6 rounded-lg shadow-lg": isOpen,
             "hidden": !isOpen,
@@ -34,7 +57,7 @@ const Header = () => {
           }
         )}
       >
-        <ul className="flex flex-col md:flex-row gap-4">
+        <ul className="flex flex-col lg:flex-row gap-4">
           <li>
             <a
               href="#bienvenue"

@@ -32,6 +32,7 @@ function Card({ card }) {
                     alt={card.title}
                     width={96}
                     height={80}
+                    loading="lazy"
                     className="w-96 h-80 object-cover transition-all duration-300 ease-in-out transform hover:scale-110 hover:grayscale-0 md:grayscale"
                 />
                 <div
@@ -62,7 +63,8 @@ function Card({ card }) {
                             alt={card.title}
                             width={20}
                             height={20}
-                            className="mb-4 w-fit object-cover max-w-xs sm:max-w-sm md:max-w-sm lg:max-w-md xl:max-w-4xl mx-auto rounded-md shadow-md"
+                            loading="lazy"
+                            className="mb-4 w-full object-cover max-w-xs sm:max-w-sm md:max-w-sm lg:max-w-md xl:max-w-4xl mx-auto rounded-md shadow-md"
                         />
 
                         <div className="flex justify-center mt-4 space-x-2 pb-4 px-4">
@@ -73,6 +75,7 @@ function Card({ card }) {
                                     alt={`Thumbnail ${index + 1}`}
                                     width={80}
                                     height={80}
+                                    loading="lazy"
                                     className={`w-20 sm:w-22 md:w-28 lg:w-36 xl:w-40 object-cover cursor-pointer rounded-md transition-transform duration-200 ${index === currentImageIndex ? 'border-2 border-green-400 scale-105' : 'border-2 border-gray-50'}`}
                                     onClick={() => handleThumbnailClick(index)}
                                 />
@@ -96,6 +99,7 @@ function Card({ card }) {
                                             className="w-12 h-12 object-contain"
                                             width={12}
                                             height={12}
+                                            loading="lazy"
                                         />
                                     </div>
                                 ))}

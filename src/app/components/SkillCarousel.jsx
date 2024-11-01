@@ -17,7 +17,7 @@ const SkillCarousel = () => {
 
   return (
     <div
-      className="relative flex flex-col items-center py-8 mx-auto bg-gray-200 rounded-lg shadow-md sm:px-8 md:px-12 lg:px-16 xl:px-24 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl">
+      className="relative flex flex-col items-center py-8 mx-auto bg-gray-200 rounded-lg shadow-md sm:px-8 md:px-12 lg:px-16 xl:px-24 max-w-[80%] sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl">
       <Carousel
         infiniteLoop
         showThumbs={false}
@@ -25,16 +25,18 @@ const SkillCarousel = () => {
         useKeyboardArrows
         className="relative w-full"
         renderArrowPrev={(clickHandler) => (
-          <button 
-            onClick={clickHandler} 
+          <button
+            aria-label="Précédent"
+            onClick={clickHandler}
             className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 text-4xl text-gray-600 hover:text-gray-950"
           >
             <FaChevronLeft />
           </button>
         )}
         renderArrowNext={(clickHandler) => (
-          <button 
-            onClick={clickHandler} 
+          <button
+            aria-label="Suivant"
+            onClick={clickHandler}
             className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 text-4xl text-gray-600 hover:text-gray-950"
           >
             <FaChevronRight />
@@ -62,6 +64,7 @@ const SkillCarousel = () => {
                     title={skill.name}
                     width={60}
                     height={60}
+                    loading="lazy"
                     className="rounded-lg"
                   />
                 </div>
